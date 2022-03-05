@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container{
+    background-color: gray;
+    height: 100vh;
+}
+
+form{
+    background: white;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;   
+    padding: 20px 40px;
+    border-radius: 10px; 
+    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.404);
+}
+
+.input-group{
+    display: flex;
+    justify-content: center;
+    margin: 60px 50px 20px 50px;
+}
+
+.input-group label{
+    flex-basis: 100px;
+    font-size: 14px;
+}
+
+.input-group input, .input-group textarea{
+    flex-basis: 200px;
+    margin-left: 50px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid grey;
+    background: transparent;
+    font-size: 14px;
+    
+    
+}
+
+::placeholder{
+    font-size: 12px;
+}
+
+form button{
+    background: darkblue;
+    border-radius: 15px;
+    font-size: large;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 600;
+    display: block;
+    margin: 10px auto 20px;
+    transition: 0.5s;
+}
+
+form button:hover{
+    background: white;
+    color: darkblue;
+}
+
+form .fa-paper-plane{
+    background: white;
+    padding:20px;
+    font-size: 30px;    
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(128, 128, 128, 0.39);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.input-group span{
+    color: red;
+    position: absolute;
+    right: 7em;
+    
+}
+
+.input-group #name-error{
+    top: 8em;
+}
+
+.input-group #name-error i{
+    position: relative;
+    bottom: 2em;
+}
+
+.input-group #email-error{
+    bottom: 20em;
+}
+
+.input-group #email-error i{
+    position: relative;
+    bottom: 2em;
+}
+
+.input-group #message-error{
+    bottom: 6em;
+    right: 2em;
+}
+
+form span{
+    color: red;
+    
+}
+
+.input-group span i{
+    color: seagreen;
+}
+
+.input-group #message-error i{
+    position: relative;
+    bottom: 1.5em;
+    right: 5em;
+}

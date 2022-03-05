@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/fce072a04f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <form>
+            
+            <i class="fa-solid fa-paper-plane"></i>
+            
+            
+            
+
+            <div class="input-group">
+                <label>Full name</label>
+                <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validatename()">
+                <span id="name-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Phone</label>
+                <input type="tel" placeholder="Phone number" id="contact-phone" onkeyup="validatephone()">
+                <span id="phone-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Email Id</label>
+                <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Your message</label>
+                <textarea cols="40" rows="6" placeholder="Enter your message" id="contact-message" onkeyup="validatemessage()"></textarea>
+                <span id="message-error"></span>
+            </div>
+
+            <button onclick="return validatesubmit()">Submit</button>
+            <span id="submit-error"></span>
+        </form>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
